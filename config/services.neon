@@ -1,0 +1,12 @@
+services:
+	- App\Router\RouterFactory
+	router:
+				type: Nette\Application\IRouter
+				factory: @App\Router\RouterFactory::create
+
+
+search:
+	-	in: %appDir%
+		classes:
+			- *Factory
+			- *Facade
